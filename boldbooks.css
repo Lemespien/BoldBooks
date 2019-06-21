@@ -1,0 +1,35 @@
+	body.page .entry .entry-content > *, .entry .entry-summary > * {
+			max-width: none;
+	}
+	.content-area {
+		max-width: 80%;
+		margin: auto;
+	}
+	.leme-comment-form {
+		margin: 25px;
+		max-width: 65%;
+	}
+	.form-group {
+		padding: 0.5em;
+	}
+	.container {
+		color: #fff;
+		border: 2px solid #fff;
+		border-radius: 5px;
+		background-color: #0073aa;
+		margin:  25px;
+		padding: 0px 1em;
+		max-width: 50%;
+	}
+	.leme-form-alert {
+		text-align: center;
+		font-size: 24px;
+		max-width: 30%;
+		margin: 25px;
+		border: 2px solid red;
+		background-color: pink;
+	}
+
+	.leme-comment-text {
+		font-size: 23px;
+	}

@@ -1,5 +1,4 @@
-
-<?php /* Template Name: boldbook-template */ ?>
+<?php /* Template Name: boldbooks-template */ ?>
 
 <?php get_header(); ?>
 	<section id="primary" class="content-area">
@@ -65,5 +64,3 @@
 				</form>
 		</main><!-- #main -->
 	</section><!-- #primary -->
-
-
