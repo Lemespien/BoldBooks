@@ -4,9 +4,7 @@
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<?php // Wordpress post checkage
-
 			while ( have_posts() ) : the_post();
-
 
 			echo '<h1 class="leme-main-title">' . $post->post_title . '</h1>';
 			echo '<h5 class="leme-main-meta">' . the_author_meta('display_name', $post->post_author) . $post->post_date . '</h5>';
@@ -29,12 +27,6 @@
 			?>
 
 		<?php 
-			// Comment data to store
-			$commentdata = array(
-				'comment_author' => $_POST['your_name'],
-				'comment_content'=> $_POST['comments'],
-				'comment_post_ID' => $post ->ID,
-			);
 			// Form submitz
 			if(isset($_POST['submit'])){
 				$flag=1;
@@ -50,6 +42,12 @@
 				}
 
 				if($flag==1) { 
+					// Comment data to store
+					$commentdata = array(
+						'comment_author' => $_POST['your_name'],
+						'comment_content'=> $_POST['comments'],
+						'comment_post_ID' => $post ->ID,
+					);
 					$comment_id = wp_new_comment($commentdata);
 					echo "Done the Deed"; 
 				}
